@@ -1,0 +1,8 @@
+# comprehensions
+# pattern matching
+
+mix new cards
+
+mix test
+mix deps.get
+mix docs
