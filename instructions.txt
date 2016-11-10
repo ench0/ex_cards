@@ -1,8 +1,23 @@
 # comprehensions
-# pattern matching
+# pattern matching = elixir's variable assignement
+iex -S mix
 
 mix new cards
 
 mix test
 mix deps.get
 mix docs
+
+# maps = collection of key value pairs
+> colors = %{primary: "red", secondary: "blue"}
+> colors.secondary
+"blue"
+> %{secondary: secondary_color} = colors
+> secondary_color
+"blue"
+> Map.put(colors, :primary, "blue")
+%{primary: "blue", secondary: "blue"}
+> colors 
+%{primary: "red", secondary: "blue"}
+> %{colors | primary: "blue"}
+%{primary: "blue", secondary: "blue"}
